@@ -28,9 +28,22 @@ public class PessoaService {
 
     public MessageResponseDTO createPessoa(PessoaDTO pessoaDTO) {
         Pessoa pessoaToSave = pessoaMapper.toModel(pessoaDTO);
-
         Pessoa savedPessoa = pessoaRepository.save(pessoaToSave);
         return createMessageResponse(savedPessoa.getId(), "Criada a pessoa com ID ");
+    }
+
+    public List<PessoaDTO> ListarPorUf(String uf){
+        List<Pessoa> allPessoas = pessoaRepository.buscarPelaUf(uf);
+        return allPessoas.stream()
+                .map(pessoaMapper::toDTO)
+                .collect(Collectors.toList());
+    }
+
+    public List<PessoaDTO> ListarPorNome(String nome){
+        List<Pessoa> allPessoas = pessoaRepository.findByNomeIgnoreCaseContaining(nome);
+        return allPessoas.stream()
+                .map(pessoaMapper::toDTO)
+                .collect(Collectors.toList());
     }
 
     public List<PessoaDTO> listAll() {

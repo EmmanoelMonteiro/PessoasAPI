@@ -30,6 +30,16 @@ public class PessoaController {
         return pessoaService.listAll();
     }
 
+    @GetMapping("/uf/{uf}")
+    public List<PessoaDTO> listarPorUf(@PathVariable String uf) throws PessoaNotFoundException {
+        return pessoaService.ListarPorUf(uf);
+    }
+
+    @GetMapping("/nome/{nome}")
+    public List<PessoaDTO> listarPorNome(@PathVariable String nome) throws PessoaNotFoundException {
+        return pessoaService.ListarPorNome(nome);
+    }
+
     @GetMapping("/{id}")
     public PessoaDTO findById(@PathVariable Long id) throws PessoaNotFoundException {
         return pessoaService.findById(id);
