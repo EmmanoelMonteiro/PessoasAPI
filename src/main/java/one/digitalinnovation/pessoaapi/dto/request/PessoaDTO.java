@@ -27,9 +27,13 @@ public class PessoaDTO {
     @CPF
     private String cpf;
 
-    private String aniversario;
+    private String dataNascimento;
 
     @Valid
     @NotEmpty
     private List<TelefoneDTO> telefones;
+
+    @Valid
+    @NotEmpty
+    private List<EnderecoDTO> enderecos;
 }

@@ -11,7 +11,7 @@ public interface PessoaMapper {
 
     PessoaMapper INSTANCE = Mappers.getMapper(PessoaMapper.class);
 
-    @Mapping(target = "aniversario", source = "aniversario", dateFormat = "dd-MM-yyyy")
+    @Mapping(target = "dataNascimento", source = "dataNascimento", dateFormat = "dd-MM-yyyy")
 
     Pessoa toModel(PessoaDTO pessoaDTO);
 

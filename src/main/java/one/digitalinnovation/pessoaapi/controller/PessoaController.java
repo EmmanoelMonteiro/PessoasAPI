@@ -3,7 +3,6 @@ package one.digitalinnovation.pessoaapi.controller;
 import lombok.AllArgsConstructor;
 import one.digitalinnovation.pessoaapi.dto.request.PessoaDTO;
 import one.digitalinnovation.pessoaapi.dto.response.MessageResponseDTO;
-import one.digitalinnovation.pessoaapi.entity.Pessoa;
 import one.digitalinnovation.pessoaapi.exception.PessoaNotFoundException;
 import one.digitalinnovation.pessoaapi.service.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -27,8 +27,11 @@ public class Pessoa {
     private String cpf;
 
     @Column(nullable = false)
-    private LocalDate aniversario;
+    private LocalDate dataNascimento;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<Telefone> telefones;
+
+    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
+    private List<Endereco> enderecos;
 }

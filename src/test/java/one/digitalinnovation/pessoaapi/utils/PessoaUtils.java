@@ -11,13 +11,13 @@ public class PessoaUtils {
     private static final String nome = "Emmanoel Monteiro";
     private static final String cpf = "009.765.294-67";
     private static final long id = 1L;
-    public static final LocalDate aniversario = LocalDate.of(1979, 06, 13);
+    public static final LocalDate dataNascimento = LocalDate.of(1979, 06, 13);
 
     public static PessoaDTO createFakeDTO() {
         return PessoaDTO.builder()
-                .firstName(nome)
+                .nome(nome)
                 .cpf(cpf)
-                .birthDate("13-06-1979")
+                .dataNascimento("13-06-1979")
                 .telefones(Collections.singletonList(TelefoneUtils.createFakeDTO()))
                 .build();
     }
@@ -27,7 +27,7 @@ public class PessoaUtils {
                 .id(id)
                 .nome(nome)
                 .cpf(cpf)
-                .aniversario(aniversario)
+                .dataNascimento(dataNascimento)
                 .telefones(Collections.singletonList(TelefoneUtils.createFakeEntity()))
                 .build();
     }
