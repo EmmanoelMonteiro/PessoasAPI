@@ -9,6 +9,10 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * Representa a Entidade Pessoa na base de dados.
+ * É utilizada em PessoaService e PessoaServiceTest.
+ */
 @Entity
 @Data
 @Builder
@@ -28,10 +32,16 @@ public class Pessoa {
 
     @Column(nullable = false)
     private LocalDate dataNascimento;
-
+    /**
+     * Relação entre a entidade Pessoa e Telefone
+     * Uma pessoa pode ter vários telefones
+     */
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<Telefone> telefones;
-
+    /**
+     * Relação entre a entidade Pessoa e Endereço
+     * Uma pessoa pode ter vários endereços
+     */
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<Endereco> enderecos;
 }

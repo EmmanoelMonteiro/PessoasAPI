@@ -11,6 +11,11 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.util.List;
 
+/**
+ * Mapeamento dos tributos da Entidade Pessoa
+ * para tratamento e transferência de dados pelo sistema.
+ * É utilizada em PessoaService e PessoaServiceTest.
+ */
 @Data
 @Builder
 @AllArgsConstructor

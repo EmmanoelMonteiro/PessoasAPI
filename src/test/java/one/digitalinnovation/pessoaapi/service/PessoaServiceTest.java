@@ -24,7 +24,7 @@ public class PessoaServiceTest {
     private PessoaService pessoaService;
 
     @Test
-    void testGivenPersonDTOThenReturnSavedMessage() {
+    void testGivenPessoaDTOThenReturnSavedMessage() {
         PessoaDTO pessoaDTO = createFakeDTO();
         Pessoa expectedSavedPessoa = createFakeEntity();
 

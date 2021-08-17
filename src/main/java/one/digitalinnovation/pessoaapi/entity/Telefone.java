@@ -7,7 +7,10 @@ import lombok.NoArgsConstructor;
 import one.digitalinnovation.pessoaapi.enums.TiposTelefone;
 
 import javax.persistence.*;
-
+/**
+ * Representa a Entidade Telefone na base de dados.
+ *
+ */
 @Entity
 @Data
 @Builder

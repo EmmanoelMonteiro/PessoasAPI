@@ -19,6 +19,7 @@ public class PessoaUtils {
                 .cpf(cpf)
                 .dataNascimento("13-06-1979")
                 .telefones(Collections.singletonList(TelefoneUtils.createFakeDTO()))
+                .enderecos(Collections.singletonList(EnderecoUtils.createFakeDTO()))
                 .build();
     }
 
@@ -29,6 +30,7 @@ public class PessoaUtils {
                 .cpf(cpf)
                 .dataNascimento(dataNascimento)
                 .telefones(Collections.singletonList(TelefoneUtils.createFakeEntity()))
+                .enderecos(Collections.singletonList(EnderecoUtils.createFakeEntity()))
                 .build();
     }
 }

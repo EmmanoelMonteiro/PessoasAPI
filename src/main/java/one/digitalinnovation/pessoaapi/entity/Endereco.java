@@ -6,7 +6,10 @@ import lombok.NoArgsConstructor;
 import one.digitalinnovation.pessoaapi.enums.TiposEndereco;
 
 import javax.persistence.*;
-
+/**
+ * Representa a Entidade Endereço na base de dados.
+ *
+ */
 @Entity
 @Data
 @Builder

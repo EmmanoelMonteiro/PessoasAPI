@@ -10,7 +10,10 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
-
+/**
+ * Mapeamento dos tributos da Entidade Telefone
+ * para tratamento e transferência de dados pelo sistema.
+ */
 @Data
 @Builder
 @AllArgsConstructor

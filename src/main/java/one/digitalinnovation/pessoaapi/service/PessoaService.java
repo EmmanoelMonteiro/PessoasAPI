@@ -13,6 +13,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Gereciamento dos principais serviços disponíveis para
+ * a os endpoints da API de Gestão de Pessoas
+ * (createPessoa, listAll, findById, delete e updateById)
+ */
 @Service
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PessoaService {
