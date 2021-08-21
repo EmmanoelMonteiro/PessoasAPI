@@ -8,9 +8,9 @@ o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'
 
 # Entidades:
 
-Pessoa
-Endereco
-Telefone
+* Pessoa
+* Endereco
+* Telefone
 
 
 # Métodos:
