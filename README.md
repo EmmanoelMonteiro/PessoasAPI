@@ -24,22 +24,19 @@ o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'
 * DELETE http://localhost:8080/api/v1/pessoas/{id}     >> deleteById
 
 # MODELO DE JSON PARA CARREGAR DADOS
-
+    
     {
-        "id":1,
-        "nome": "Carlos Heitor",
-        "cpf": "000.000.000-00",        // tem que ser um CPF válido
-        "dataNascimento": "18-08-2000",
+        "nome": "Mario de Sousa",
+        "cpf": "284.660.190-90",
+        "dataNascimento": "18-02-1878",
         "telefones":[
             {
-                "id": 1,
                 "tipo": "CASA",
                 "numero": "(45)98877-4422"
             }
         ],
         "enderecos":[
             {
-                "id": 1,
                 "tipo": "RESIDENCIAL",
                 "logradouro": "Av. João Gular",
                 "numero": "34",
