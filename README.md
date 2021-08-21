@@ -15,13 +15,13 @@ o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'
 
 # Métodos:
 
-GET http://localhost:8080/api/v1/pessoas             >> listAll
-GET http://localhost:8080/api/v1/pessoas/uf/{UF}     >> listarPorUf
-GET http://localhost:8080/api/v1/pessoas/nome/{nome} >> listarPorNome
-GET http://localhost:8080/api/v1/pessoas/id/{id}     >> findById
-POST http://localhost:8080/api/v1/pessoas            >> createPessoa
-PUT http://localhost:8080/api/v1/pessoas/{id}        >> updateById
-DELETE http://localhost:8080/api/v1/pessoas/{id}     >> deleteById
+* GET http://localhost:8080/api/v1/pessoas             >> listAll
+* GET http://localhost:8080/api/v1/pessoas/uf/{UF}     >> listarPorUf
+* GET http://localhost:8080/api/v1/pessoas/nome/{nome} >> listarPorNome
+* GET http://localhost:8080/api/v1/pessoas/id/{id}     >> findById
+* POST http://localhost:8080/api/v1/pessoas            >> createPessoa
+* PUT http://localhost:8080/api/v1/pessoas/{id}        >> updateById
+* DELETE http://localhost:8080/api/v1/pessoas/{id}     >> deleteById
 
 # MODELO DE JSON PARA CARREGAR DADOS
 
