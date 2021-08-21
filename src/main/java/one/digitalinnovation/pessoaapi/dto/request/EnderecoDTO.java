@@ -6,8 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import one.digitalinnovation.pessoaapi.enums.TiposEndereco;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 /**
@@ -20,6 +19,8 @@ import javax.validation.constraints.Size;
 @NoArgsConstructor
 public class EnderecoDTO {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Enumerated(EnumType.STRING)

@@ -6,6 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.br.CPF;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
@@ -21,7 +24,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PessoaDTO {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotEmpty
