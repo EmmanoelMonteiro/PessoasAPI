@@ -9,6 +9,7 @@ import one.digitalinnovation.pessoaapi.enums.TiposTelefone;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
+
 /**
  * Mapeamento dos tributos da Entidade Telefone
  * para tratamento e transferência de dados pelo sistema.

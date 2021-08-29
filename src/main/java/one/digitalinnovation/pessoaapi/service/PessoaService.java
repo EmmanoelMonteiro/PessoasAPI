@@ -22,9 +22,8 @@ import java.util.stream.Collectors;
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PessoaService {
 
-    private PessoaRepository pessoaRepository;
-
     private final PessoaMapper pessoaMapper = PessoaMapper.INSTANCE;
+    private PessoaRepository pessoaRepository;
 
     public MessageResponseDTO createPessoa(PessoaDTO pessoaDTO) {
         Pessoa pessoaToSave = pessoaMapper.toModel(pessoaDTO);
@@ -32,14 +31,14 @@ public class PessoaService {
         return createMessageResponse(savedPessoa.getId(), "Criada a pessoa com ID ");
     }
 
-    public List<PessoaDTO> ListarPorUf(String uf){
+    public List<PessoaDTO> ListarPorUf(String uf) {
         List<Pessoa> allPessoas = pessoaRepository.buscarPelaUf(uf);
         return allPessoas.stream()
                 .map(pessoaMapper::toDTO)
                 .collect(Collectors.toList());
     }
 
-    public List<PessoaDTO> ListarPorNome(String nome){
+    public List<PessoaDTO> ListarPorNome(String nome) {
         List<Pessoa> allPessoas = pessoaRepository.findByNomeIgnoreCaseContaining(nome);
         return allPessoas.stream()
                 .map(pessoaMapper::toDTO)
