@@ -2,18 +2,30 @@
 
 Projeto de API REST para gestão de pessoas utilizando JAVA com spring-boot, banco H2 e Gradle
 
+Para execução do projeto se faz necessário:
+
+* Java 11 ou versões superiores.
+* Gradle 7.2
+
+Para executar o projeto
+> ./gradlew bootRun
+
 Ao subir o projeto copiar a referencia do jdbc do H2-console para conectar no banco. Muda a cada nova execução do projeto
+> o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f2304b1c-3746-4de8-8ae4-9ba66272688d'
 
-o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f2304b1c-3746-4de8-8ae4-9ba66272688d'
+O acesso ao banco de dados H2 em:
+> http://localhost:8080/h2-console/
 
-# Entidades:
+Acesso a API do projeto em:
+> http://localhost:8080/api/v1/pessoas
+
+## Entidades:
 
 * Pessoa
 * Endereco
 * Telefone
 
-
-# Métodos:
+## Métodos:
 
 * GET http://localhost:8080/api/v1/pessoas             >> listAll
 * GET http://localhost:8080/api/v1/pessoas/uf/{UF}     >> listarPorUf
