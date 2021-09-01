@@ -1,4 +1,4 @@
-# PessoasAPI
+# pessoas_api
 
 Projeto de API REST para gestão de pessoas utilizando JAVA com spring-boot, banco H2 e Gradle
 
