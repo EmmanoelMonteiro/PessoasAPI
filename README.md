@@ -8,16 +8,24 @@ Para execução do projeto se faz necessário:
 * Gradle 7.2
 
 Para executar o projeto
-> ./gradlew bootRun
+```shell script
+./gradlew bootRun
+```
 
 Ao subir o projeto copiar a referencia do jdbc do H2-console para conectar no banco. Muda a cada nova execução do projeto
-> o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f2304b1c-3746-4de8-8ae4-9ba66272688d'
+```shell script
+o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f2304b1c-3746-4de8-8ae4-9ba66272688d'
+```
 
 O acesso ao banco de dados H2 em:
-> http://localhost:8080/h2-console/
+```shell script
+http://localhost:8080/h2-console/
+```
 
 Acesso a API do projeto em:
-> http://localhost:8080/api/v1/pessoas
+```shell script
+http://localhost:8080/api/v1/pessoas
+```
 
 ## Entidades:
 
@@ -27,13 +35,13 @@ Acesso a API do projeto em:
 
 ## Métodos:
 
-* GET http://localhost:8080/api/v1/pessoas             >> listAll
-* GET http://localhost:8080/api/v1/pessoas/uf/{UF}     >> listarPorUf
-* GET http://localhost:8080/api/v1/pessoas/nome/{nome} >> listarPorNome
-* GET http://localhost:8080/api/v1/pessoas/id/{id}     >> findById
-* POST http://localhost:8080/api/v1/pessoas            >> createPessoa
-* PUT http://localhost:8080/api/v1/pessoas/{id}        >> updateById
-* DELETE http://localhost:8080/api/v1/pessoas/{id}     >> deleteById
+* GET http://localhost:8080/api/v1/pessoas
+* GET http://localhost:8080/api/v1/pessoas/uf/{UF}
+* GET http://localhost:8080/api/v1/pessoas/nome/{nome}
+* GET http://localhost:8080/api/v1/pessoas/id/{id}
+* POST http://localhost:8080/api/v1/pessoas
+* PUT http://localhost:8080/api/v1/pessoas/{id}
+* DELETE http://localhost:8080/api/v1/pessoas/{id}
 
 # MODELO DE JSON PARA CARREGAR DADOS
     
